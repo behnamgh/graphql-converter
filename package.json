@@ -1,11 +1,10 @@
 {
   "name": "graphql-converter",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "This package help you to create your graphql query out of array of properties name",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-  
     "build": "tsc",
     "test": "jest --config jestconfig.json",
     "prepublish": "tsc"
