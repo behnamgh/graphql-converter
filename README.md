@@ -1,10 +1,10 @@
 This is a package to help you in creating your graphql query out of array of string
 # Instruction
 ```javascript
-import graphqlConverter from "graphql-converter";
+import { queryBuilder } from "graphql-converter";
 // or
-const graphqlConverter = require("graphql-converter");
+const queryBuilder = require("graphql-converter").queryBuilder;
 
 // then you can convert your query
-graphqlConverter(["test"])
+queryBuilder(["test"])
 

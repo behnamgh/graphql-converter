@@ -1,10 +1,8 @@
-import converter from "../";
+import { queryBuilder } from "../";
 
 test('should return empty object when the input is empty', () => {
-    expect(converter([])).toBe('{}');
+    expect(queryBuilder([])).toBe('{}');
 });
 test('should return correct value', () => {
-    expect(converter(["behnam"])).toBe('{behnam}');
-    expect(converter(["behnam"])).toBe('{behnam}');
-    expect(converter(["behnam"])).toBe('{behnam}');
+    expect(queryBuilder(["behnam"])).toBe(JSON.stringify({ behnam: {} }, null, '\t').replace(/\: \{\}|\:|\"|\:/g, ""));
 });

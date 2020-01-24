@@ -1,4 +1,4 @@
-export default (array: Array<string>): string => {
+export const queryBuilder = (array: Array<string>): string => {
     let result = array.reduce((acc, cur) => {
         const levels = cur.split(".");
         levels.reduce((object: any, currentKey: string) => {
@@ -9,7 +9,7 @@ export default (array: Array<string>): string => {
         return acc;
     }, {});
     return JSON.stringify(result, null, "\t")
-        .replace(/\:|\{\}|\"|\:/g, "");
+        .replace(/\: \{\}|\:|\"|\:/g, "");
     // .replace(/\{\"/g, "{\n ")
     // .replace(/\:\{\}/g, "\n ")
     // .replace(/\"|\:|\,/g, " ")
