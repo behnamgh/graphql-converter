@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - node:akpine
+
+
+before_install:
+  - npm i
+
+script:
+ - npm run test -- --coverage
