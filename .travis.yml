@@ -1,6 +1,5 @@
-sudo: required
 services:
-  - node:akpine
+  - node:alpine
 
 
 before_install:
