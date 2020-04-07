@@ -18,7 +18,10 @@
   },
   "keywords": [
     "graphql",
-    "converter"
+    "converter",
+    "gqlBuilder",
+    "graphql-converter",
+    "graphql-tag"
   ],
   "author": "Behnam Ghafary",
   "license": "ISC",
